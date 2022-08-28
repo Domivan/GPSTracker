@@ -8,7 +8,7 @@
   "resources": {
     "assembly": {
       "BrowserInterop.dll": "sha256-zicoRqfdLgYZIfgv3UsYRNO8bKWCkzdOaAG4cacW1jI=",
-      "GPSTracker.dll": "sha256-L7Y5M1\/4zdYmOnsJoROHxDhdw2j0UpZrH2tlMvvg5wY=",
+      "GPSTracker.dll": "sha256-ZypsaBUbGDyFznMQwpMaigCcdDak19GNtadtQBj9aPw=",
       "Microsoft.AspNetCore.Components.dll": "sha256-hns9ZOLLtOKmEBf+mnFXCeF0Rc\/8HE3eQmn\/k1oWROs=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-PdYKNU3JFUSCwZkUC2EvjucmTjwE3xrGoa+SvpFmvWs=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-\/Dy2ObLVYzJ6Xlan\/StjJDmeXXNbucbohR2dQMoH3Zo=",
