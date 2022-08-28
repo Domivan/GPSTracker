@@ -8,8 +8,8 @@
   "resources": {
     "assembly": {
       "BrowserInterop.dll": "sha256-zicoRqfdLgYZIfgv3UsYRNO8bKWCkzdOaAG4cacW1jI=",
-      "GPSTracker.dll": "sha256-AzUnxJVBxfXfjvByzMNJE0VkpJFM+Ok4oJMX6UC3tDM=",
-      "Microsoft.AspNetCore.Components.dll": "sha256-akphxmJLHT1BVk+0QfPRrRvEce1uh1lxCBUMdEg5A3c=",
+      "GPSTracker.dll": "sha256-L7Y5M1\/4zdYmOnsJoROHxDhdw2j0UpZrH2tlMvvg5wY=",
+      "Microsoft.AspNetCore.Components.dll": "sha256-hns9ZOLLtOKmEBf+mnFXCeF0Rc\/8HE3eQmn\/k1oWROs=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-PdYKNU3JFUSCwZkUC2EvjucmTjwE3xrGoa+SvpFmvWs=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-\/Dy2ObLVYzJ6Xlan\/StjJDmeXXNbucbohR2dQMoH3Zo=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-zhFtW4kE16TdrpPne9I1Cu9o0KYzrS50VE9MVSifJg4=",
@@ -32,11 +32,11 @@
       "System.Net.Http.dll": "sha256-RHY25UsBGJp2vUCKo6ZaAeKTbOat4yJYROQw3ebq6Cw=",
       "System.Net.Http.Json.dll": "sha256-SAzm43PC0NGBzUZvSKZhALtbVFv840PKkcc5m\/F8Fh4=",
       "System.Net.Primitives.dll": "sha256-e+Tz1hoYoHKvs3YUQVDZYk6LmlZyP49xGfF8snC25ik=",
-      "System.Private.CoreLib.dll": "sha256-9FAOohVFMbXU8Ufda6dQ1tEmt8YYT8ycyKXZ5PXkwfM=",
+      "System.Private.CoreLib.dll": "sha256-9VJ5bpAaIkjamm9aYblrzkNn7Y1wlgbkfVtzIUqnXVY=",
       "System.Private.Runtime.InteropServices.JavaScript.dll": "sha256-Tjpaise0TkDrv13BM0rRyVpImvGGQXNqiuRHBW\/XzKE=",
       "System.Private.Uri.dll": "sha256-w50rcAvcA+zY+7SnidHiVMQcjS2AM8mAaoXI1GXfd9o=",
       "System.Runtime.CompilerServices.Unsafe.dll": "sha256-cQEZqPkNrd7HTrrx23l85M\/huEj+FOsWEcU3UTPcjxg=",
-      "System.Runtime.dll": "sha256-0aIkWKhsPjrsc2oJPYblpkNdo8YaInW5iihC5K0\/Kys=",
+      "System.Runtime.dll": "sha256-mpegIeAswK8DnC3+BBazfcMa1upNimdlOnOgiTUwJXI=",
       "System.Text.Encodings.Web.dll": "sha256-YDdw97yEeGERivHPm7zTAX9p\/X\/guaJ8M7gADPmnXBw=",
       "System.Text.Json.dll": "sha256-D6x746V0sjXm5Fqfz7LiA3TCCjI3+NY1qRqN26wqwmQ="
     },
