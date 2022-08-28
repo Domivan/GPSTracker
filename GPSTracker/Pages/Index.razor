@@ -21,9 +21,15 @@ Welcome to your new app.
 @if (currentPosition != null)
 {
     <div>
-        Latitude: @currentPosition.Coords.Latitude<br />
-        Longitude: @currentPosition.Coords.Longitude<br />
-        Accuracy: @currentPosition.Coords.Accuracy<br />
+        <ul>
+            <li>Latitude: @currentPosition.Coords.Latitude</li>
+            <li>Longitude: @currentPosition.Coords.Longitude </li>
+            <li>Altitude: @currentPosition.Coords.Altitude </li>
+            <li>Accuracy: @currentPosition.Coords.Accuracy </li>
+            <li>Altitude Accuracy: @currentPosition.Coords.AltitudeAccuracy </li>
+            <li>Heading: @currentPosition.Coords.Heading </li>
+            <li>Speed: @currentPosition.Coords.Speed </li>
+        </ul>
     </div>
 }
 
