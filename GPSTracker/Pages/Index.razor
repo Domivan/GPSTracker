@@ -17,6 +17,7 @@ Welcome to your new app.
 <button type="button" @onclick="@GetGeolocation">Get Location</button>
 <button type="button" @onclick="@StartWatch">Start Watching</button>
 <button type="button" @onclick="@StopWatch">Stop Watching</button>
+<button type="button" @onclick="@AddCount">Add Count</button>
 
 <h3>Your Position</h3>
 
@@ -49,7 +50,10 @@ Welcome to your new app.
     </div>
 }
 
+<h3>Count: @count</h3>
+
 @code{
+    public static int count = 0;
     private WindowNavigatorGeolocation geolocationWrapper;
     private GeolocationPosition currentPosition;
     private List<GeolocationPosition> positionHistory = new List<GeolocationPosition>();
@@ -85,6 +89,12 @@ Welcome to your new app.
     {
         await watcher.DisposeAsync();
         watcher = null;
+    }
+
+    private async void AddCount()
+    {
+        count++;
+        await InvokeAsync(StateHasChanged);
     }
 
     public async ValueTask DisposeAsync()
