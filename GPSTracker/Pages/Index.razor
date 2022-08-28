@@ -1,4 +1,8 @@
-﻿@page "/"
+﻿@inject IJSRuntime jsRuntime
+@using BrowserInterop.Extensions
+@using BrowserInterop.Geolocation
+
+@page "/"
 
 <PageTitle>Index</PageTitle>
 
@@ -7,3 +11,40 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+<h1>GPS Tracking</h1>
+
+<button type="button" @onclick="@GetGeolocation">Get Location</button>
+
+<h3>Your Position</h3>
+
+@if (currentPosition != null)
+{
+    <div>
+        Latitude: @currentPosition.Coords.Latitude<br />
+        Longitude: @currentPosition.Coords.Longitude<br />
+        Accuracy: @currentPosition.Coords.Accuracy<br />
+    </div>
+}
+
+@code{
+    private WindowNavigatorGeolocation geolocationWrapper;
+    private GeolocationPosition currentPosition;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var window = await jsRuntime.Window();
+        var navigator = await window.Navigator();
+        geolocationWrapper = navigator.Geolocation;
+    }
+
+    public async Task GetGeolocation()
+    {
+        currentPosition = (await geolocationWrapper.GetCurrentPosition(new PositionOptions()
+        {
+            EnableHighAccuracy = true,
+            MaximumAgeTimeSpan = TimeSpan.FromHours(1),
+            TimeoutTimeSpan = TimeSpan.FromMinutes(1)
+        })).Location;
+    }
+}
