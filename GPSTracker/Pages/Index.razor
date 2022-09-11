@@ -18,6 +18,7 @@ Welcome to your new app.
 <button type="button" @onclick="@StartWatch">Start Watching</button>
 <button type="button" @onclick="@StopWatch">Stop Watching</button>
 <button type="button" @onclick="@AddCount">Add Count</button>
+<button type="button" @onclick="@Beep">Beep</button>
 
 <h3>Your Position</h3>
 
@@ -26,12 +27,9 @@ Welcome to your new app.
     <div>
         <ul>
             <li>Latitude: @currentPosition.Coords.Latitude</li>
-            <li>Longitude: @currentPosition.Coords.Longitude </li>
-            <li>Altitude: @currentPosition.Coords.Altitude </li>
-            <li>Accuracy: @currentPosition.Coords.Accuracy </li>
-            <li>Altitude Accuracy: @currentPosition.Coords.AltitudeAccuracy </li>
-            <li>Heading: @currentPosition.Coords.Heading </li>
-            <li>Speed: @currentPosition.Coords.Speed </li>
+            <li>Longitude: @currentPosition.Coords.Longitude</li>
+            <li>Accuracy: @currentPosition.Coords.Accuracy</li>
+            <li>Speed: @currentPosition.Coords.Speed</li>
         </ul>
     </div>
 }
@@ -44,7 +42,8 @@ Welcome to your new app.
     <div>
         <ul>
             <li>Latitude: @last.Coords.Latitude</li>
-            <li>Longitude: @last.Coords.Longitude </li>
+            <li>Longitude: @last.Coords.Longitude</li>
+            <li>Accuracy: @last.Coords.Accuracy</li>
             <li>Speed: @last.Coords.Speed</li>
         </ul>
     </div>
@@ -58,6 +57,15 @@ Welcome to your new app.
     private GeolocationPosition currentPosition;
     private List<GeolocationPosition> positionHistory = new List<GeolocationPosition>();
     private IAsyncDisposable watcher;
+    private IJSObjectReference module;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            module = await jsRuntime.InvokeAsync<IJSObjectReference>("import", "./Pages/Index.razor.js");
+        }
+    }
 
     protected override async Task OnInitializedAsync()
     {
@@ -95,6 +103,14 @@ Welcome to your new app.
     {
         count++;
         await InvokeAsync(StateHasChanged);
+    }
+
+    private async void Beep()
+    {
+        if (module != null)
+        {
+            await module.InvokeVoidAsync("beep", 200, 440, 100);
+        }
     }
 
     public async ValueTask DisposeAsync()
