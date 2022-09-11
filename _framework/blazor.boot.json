@@ -9,7 +9,7 @@
     "assembly": {
       "BrowserInterop.dll": "sha256-zicoRqfdLgYZIfgv3UsYRNO8bKWCkzdOaAG4cacW1jI=",
       "GeolocationNetStandard.dll": "sha256-SjJ1tRgUAi+j5+cgTUeOdM2qgQsMx1lyhg8VmYCD3pc=",
-      "GPSTracker.dll": "sha256-UYRwNcgEAlQ7hLmNkELAhKutbSpLMg4iTVgmjtloEaY=",
+      "GPSTracker.dll": "sha256-OyutgN9rBW6s59huqOyDyyfHb44lBuPdKU5WePRvnOE=",
       "Microsoft.AspNetCore.Components.dll": "sha256-hns9ZOLLtOKmEBf+mnFXCeF0Rc\/8HE3eQmn\/k1oWROs=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-PdYKNU3JFUSCwZkUC2EvjucmTjwE3xrGoa+SvpFmvWs=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-\/Dy2ObLVYzJ6Xlan\/StjJDmeXXNbucbohR2dQMoH3Zo=",
@@ -22,7 +22,7 @@
       "Microsoft.Extensions.Logging.dll": "sha256-aj8Tk1BLrOE4y41oBvw\/VGDdmvACVEpGmiEDNrA7Hco=",
       "Microsoft.Extensions.Options.dll": "sha256-eZmnmowgP5leOxVRX6H1YZim4pQMB8QipOnBJ2aowWU=",
       "Microsoft.Extensions.Primitives.dll": "sha256-YColTWA58whC+8aBjv1O7HgsyYrbHTba601EkNDWAlo=",
-      "Microsoft.JSInterop.dll": "sha256-EjlR5K4O+WJe48qm2GTGAIPrB3Goyu6olCTmrWqiiGE=",
+      "Microsoft.JSInterop.dll": "sha256-NmBA7JCaS\/rtmBi+dvLsSEhAxdY8kh0gdR09NCAry3A=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-s2xsgdYKLwwiBtdxUf7w3xifWex\/saizGRq96DOIMF8=",
       "netstandard.dll": "sha256-sgfWICcNJ4Iqpqa5XZFildRTMLsbCkNRsGZfrg6FN4s=",
       "System.Collections.Concurrent.dll": "sha256-lgc3AY6QxGIpEerdza6uSJnWz7P1hVxN+0OsWJU7c3M=",
